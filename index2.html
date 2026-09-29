@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cotización · Caballete yesero 450-750</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f1f2f0;--ink:#1c2228;--mute:#5d6872;--rule:#c9ceca;--panel:#e6e9e6;--acc:#2b6a8a;--acc-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171b1f;--ink:#e8ebe9;--mute:#98a3ac;--rule:#333b42;--panel:#20262b;--acc:#6fb3d2;--acc-ink:#0f1417}}
+:root[data-theme="dark"]{--bg:#171b1f;--ink:#e8ebe9;--mute:#98a3ac;--rule:#333b42;--panel:#20262b;--acc:#6fb3d2;--acc-ink:#0f1417}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 Barlow,system-ui,sans-serif}
+main{max-width:980px;margin:0 auto;padding:40px 20px 64px}
+h1,h2{font-family:"Barlow Condensed",Barlow,sans-serif;font-weight:700;margin:0;line-height:1}
+h1{font-size:clamp(44px,9vw,84px);letter-spacing:.005em}
+h2{font-size:28px;margin-bottom:14px}
+.sub{color:var(--mute);margin:12px 0 0;max-width:60ch}
+header{border-bottom:2px solid var(--ink);padding-bottom:28px}
+.spec{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:22px;font-weight:500}
+.spec span{color:var(--mute);font-weight:400}
+section{margin-top:44px}
+.qty{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.qty input{width:96px;font:600 18px Barlow,sans-serif;padding:8px 10px;color:var(--ink);background:var(--panel);border:1px solid var(--rule);border-radius:4px}
+.qty input:focus-visible{outline:3px solid var(--acc);outline-offset:1px}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.opt{padding:22px 20px 24px;border-left:1px solid var(--rule)}
+.opt:first-child{border-left:0;padding-left:0}
+.opt h3{font:600 20px "Barlow Condensed",sans-serif;margin:0 0 4px}
+.opt p{margin:0;color:var(--mute);font-size:14px}
+.big{font:700 clamp(34px,5vw,48px)/1.05 "Barlow Condensed",sans-serif;margin:16px 0 2px}
+.lista{font-size:14px;color:var(--mute)}
+.lista s{margin-right:6px}
+.tot{margin-top:14px;padding-top:12px;border-top:1px dashed var(--rule);font-size:14px;color:var(--mute)}
+.tot b{display:block;color:var(--acc);font:700 24px "Barlow Condensed",sans-serif}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--rule)}
+th{font-weight:600;color:var(--mute);border-bottom:2px solid var(--ink)}
+td.n,th.n{text-align:right}
+ul{margin:0;padding-left:20px;color:var(--mute);max-width:70ch}
+li{margin:6px 0}
+footer{margin-top:44px;color:var(--mute);font-size:14px;border-top:1px solid var(--rule);padding-top:16px}
+@media(max-width:720px){.prices{grid-template-columns:1fr}.opt{border-left:0;border-top:1px solid var(--rule);padding-left:0}.opt:first-child{border-top:0}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Caballete yesero 450-750</h1>
+  <p class="sub">Caballete de acero regulable en altura (450 a 750 mm) para trabajos de yesería. Elige el acabado que necesitas.</p>
+  <div class="spec">
+    <div><span>Largo </span>1.076 mm</div>
+    <div><span>Ancho base </span>668 mm</div>
+    <div><span>Peso </span>12,7 kg (13,3 kg galvanizado)</div>
+    <div><span>Material </span>Acero</div>
+  </div>
+</header>
+
+<section>
+  <h2>Precio por unidad</h2>
+  <label class="qty">Cantidad <input id="q" type="number" min="1" value="1" inputmode="numeric"></label>
+  <div class="prices">
+    <div class="opt"><h3>Acero negro</h3><p>Sin terminación</p>
+      <div class="big">$24.143</div><div class="lista"><s>$30.179</s>precio lista</div><div class="tot">Total<b data-p="24143.00">$24.143</b></div></div>
+    <div class="opt"><h3>Pintura electroestática</h3><p>Terminación pintada</p>
+      <div class="big">$32.145</div><div class="lista"><s>$40.181</s>precio lista</div><div class="tot">Total<b data-p="32144.91">$32.145</b></div></div>
+    <div class="opt"><h3>Galvanizado</h3><p>Protección anticorrosión</p>
+      <div class="big">$35.327</div><div class="lista"><s>$44.159</s>precio lista</div><div class="tot">Total<b data-p="35327.39">$35.327</b></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Despiece</h2>
+  <div class="wrap"><table>
+    <thead><tr><th>Pieza</th><th>Material</th><th class="n">Largo (mm)</th><th class="n">Cantidad</th></tr></thead>
+    <tbody>
+      <tr><td>Viga superior</td><td>Perfil 40x30x2,0 mm</td><td class="n">1.076</td><td class="n">1</td></tr>
+      <tr><td>Columna exterior</td><td>Tubo Ø42,2x2,0 mm</td><td class="n">215</td><td class="n">2</td></tr>
+      <tr><td>Travesaño superior</td><td>Tubo Ø42,2x2,0 mm</td><td class="n">1.000</td><td class="n">1</td></tr>
+      <tr><td>Tubo interior telescópico</td><td>Tubo 1¼"x2,0 mm</td><td class="n">440</td><td class="n">2</td></tr>
+      <tr><td>Travesaño inferior</td><td>Tubo 1¼"x2,0 mm</td><td class="n">1.000</td><td class="n">1</td></tr>
+      <tr><td>Pata en A</td><td>Perfil 30x30x2,0 mm</td><td class="n">499</td><td class="n">4</td></tr>
+      <tr><td>Amarre de patas</td><td>Pletina 38x5,0 mm</td><td class="n">370</td><td class="n">2</td></tr>
+      <tr><td>Pletina de cabeza</td><td>Pletina 38x5,0 mm</td><td class="n">90</td><td class="n">2</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Condiciones</h2>
+  <ul>
+    <li>Valores netos por unidad, más IVA. Ya incluyen el descuento máximo de 20% sobre el precio lista.</li>
+    <li>Base de cálculo: lote de 30 unidades.</li>
+    <li>No incluye cadena ni pasador (2 unidades), que el plano marca como faltantes.</li>
+  </ul>
+</section>
+
+<footer>Plano ESPAC · Caballete yesero 450-750 · modificado el 30 de marzo de 2017</footer>
+</main>
+<script>
+(function(){
+  var q=document.getElementById('q');
+  var fmt=new Intl.NumberFormat('es-CL',{style:'currency',currency:'CLP',maximumFractionDigits:0});
+  function upd(){
+    var n=Math.max(1,parseInt(q.value,10)||1);
+    document.querySelectorAll('[data-p]').forEach(function(el){
+      el.textContent=fmt.format(Math.round(parseFloat(el.dataset.p)*n));
+    });
+  }
+  q.addEventListener('input',upd);
+})();
+</script>
+</body>
+</html>
