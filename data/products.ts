@@ -240,5 +240,95 @@ export const products: Product[] = [
       "No incluye las 4 ruedas, que se cotizan aparte."
     ],
     "footer": "Plano ESPAC · Palet Freestanding · cliente Marcelino · 6 de julio de 2026"
+  },
+  {
+    "slug": "rack-estandar-225",
+    "name": "Rack estándar 225 Nuevo diseño",
+    "subtitle": "Rack de acero para barricas de 225 litros, con orejas de apoyo y perforaciones de escurrimiento. Elige el acabado que necesitas.",
+    "spec": [
+      [
+        "Largo",
+        "1.130 mm"
+      ],
+      [
+        "Ancho",
+        "780 mm"
+      ],
+      [
+        "Material",
+        "Acero"
+      ],
+      [
+        "Peso",
+        "25,7 kg (27,0 kg galvanizado)"
+      ]
+    ],
+    "options": [
+      {
+        "name": "Acero negro",
+        "desc": "Sin terminación",
+        "lista": 68797.35,
+        "venta": 55037.88,
+        "peso": 25.7
+      },
+      {
+        "name": "Pintura electroestática",
+        "desc": "Terminación pintada",
+        "lista": 87357.43,
+        "venta": 69885.94,
+        "peso": 25.7
+      },
+      {
+        "name": "Galvanizado",
+        "desc": "Protección anticorrosión",
+        "lista": 95414.85,
+        "venta": 76331.88,
+        "peso": 27.0
+      }
+    ],
+    "pieces": [
+      {
+        "name": "Larguero",
+        "material": "Perfil 40x40x2,0 mm",
+        "largo": 1130,
+        "cant": 4
+      },
+      {
+        "name": "Travesaño",
+        "material": "Perfil 40x40x2,0 mm",
+        "largo": 700,
+        "cant": 4
+      },
+      {
+        "name": "Apoyo Interior",
+        "material": "Perfil 40x40x2,0 mm",
+        "largo": 175,
+        "cant": 4
+      },
+      {
+        "name": "Apoyo Exterior",
+        "material": "Perfil 40x40x2,0 mm",
+        "largo": 255,
+        "cant": 4
+      },
+      {
+        "name": "Oreja izquierda",
+        "material": "Pletina 38x5,0 mm",
+        "largo": 202,
+        "cant": 8
+      },
+      {
+        "name": "Oreja derecha",
+        "material": "Pletina 38x5,0 mm",
+        "largo": 202,
+        "cant": 8
+      }
+    ],
+    "notes": [
+      "Valores netos por unidad, más IVA. Ya incluyen el descuento máximo de 20% sobre el precio lista.",
+      "Base de cálculo: lote de 30 unidades.",
+      "Incluye perforaciones Ø18 mm para escurrimiento del galvanizado."
+    ],
+    "footer": "Plano ESPAC · Rack estándar 225 Nuevo diseño · modificado el 2 de mayo de 2016"
   }
 ];
