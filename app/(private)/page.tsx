@@ -8,6 +8,16 @@ export default function Home() {
       <header>
         <h1>Cotizador ESPAC</h1>
         <p className="sub">Elige el producto para ver su cotización.</p>
+        <p style={{ marginTop: 20 }}>
+          <a
+            href="/resumen-precios.xlsx"
+            download="Resumen de precios.xlsx"
+            className="btn"
+            style={{ display: "inline-block", textDecoration: "none" }}
+          >
+            Descargar resumen en Excel
+          </a>
+        </p>
       </header>
 
       <section>
