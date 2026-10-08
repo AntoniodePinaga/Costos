@@ -23,6 +23,9 @@ export default async function ProductPage({ params }: Props) {
   const product = products.find((p) => p.slug === slug);
   if (!product) notFound();
 
+  // El peso se muestra debajo de cada precio, no en el encabezado.
+  const spec = product.spec.filter(([label]) => label !== "Peso");
+
   return (
     <main>
       <p><Link href="/" className="back">← Todas las cotizaciones</Link></p>
@@ -30,7 +33,7 @@ export default async function ProductPage({ params }: Props) {
         <h1>{product.name}</h1>
         <p className="sub">{product.subtitle}</p>
         <div className="spec">
-          {product.spec.map(([label, value]) => (
+          {spec.map(([label, value]) => (
             <div key={label}><span>{label} </span>{value}</div>
           ))}
         </div>

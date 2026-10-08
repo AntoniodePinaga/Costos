@@ -4,6 +4,9 @@ import { useState } from "react";
 import type { Option } from "@/data/products";
 import { formatCLP } from "@/lib/format";
 
+const formatPeso = (n: number) =>
+  new Intl.NumberFormat("es-CL", { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(n);
+
 export default function PriceCards({ options }: { options: Option[] }) {
   const [raw, setRaw] = useState("1");
   const parsed = parseInt(raw, 10);
@@ -32,6 +35,9 @@ export default function PriceCards({ options }: { options: Option[] }) {
             <div className="tot">
               Total
               <b>{formatCLP(o.venta * qty)}</b>
+              <small style={{ display: "block", marginTop: 6, fontSize: 12 }}>
+                Peso por unidad: {formatPeso(o.peso)} kg
+              </small>
             </div>
           </div>
         ))}
