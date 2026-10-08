@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { products } from "@/data/products";
-import { formatNumber } from "@/lib/format";
 import PriceCards from "@/components/PriceCards";
 
 export const dynamicParams = false;
@@ -38,27 +37,6 @@ export default async function ProductPage({ params }: Props) {
       </header>
 
       <PriceCards options={product.options} />
-
-      <section>
-        <h2>Despiece</h2>
-        <div className="wrap">
-          <table>
-            <thead>
-              <tr><th>Pieza</th><th>Material</th><th className="n">Largo (mm)</th><th className="n">Cantidad</th></tr>
-            </thead>
-            <tbody>
-              {product.pieces.map((pc) => (
-                <tr key={pc.name}>
-                  <td>{pc.name}</td>
-                  <td>{pc.material}</td>
-                  <td className="n">{formatNumber(pc.largo)}</td>
-                  <td className="n">{pc.cant}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
 
       <section>
         <h2>Condiciones</h2>
