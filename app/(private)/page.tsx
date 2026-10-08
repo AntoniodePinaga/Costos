@@ -1,20 +1,14 @@
 import Link from "next/link";
 import { products } from "@/data/products";
 import { formatCLP } from "@/lib/format";
-import PlanoUpload from "@/components/PlanoUpload";
 
 export default function Home() {
   return (
     <main>
       <header>
         <h1>Cotizador ESPAC</h1>
-        <p className="sub">Sube el plano del producto en PDF y revisa las cotizaciones disponibles.</p>
+        <p className="sub">Elige el producto para ver su cotización.</p>
       </header>
-
-      <section>
-        <h2>Plano del producto</h2>
-        <PlanoUpload />
-      </section>
 
       <section>
         <h2>Cotizaciones</h2>
